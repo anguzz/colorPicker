@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/redValue"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="4"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:text="0.0" />
+
+        <SeekBar
+            android:id="@+id/redSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:max="100"
+            android:progress="0" />
+
+
+        <Switch
+            android:id="@+id/redSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="R"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/greenValue"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:ems="4"
+            android:text="0.0"
+            android:enabled="false" />
+
+        <SeekBar
+            android:id="@+id/greenSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="0"
+            android:enabled="false" />
+
+
+
+        <Switch
+            android:id="@+id/greenSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="G" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/blueValue"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="4"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:text="0.0" />
+
+        <SeekBar
+            android:id="@+id/blueSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="0"
+            android:enabled="false" />
+
+
+
+        <Switch
+            android:id="@+id/blueSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="B" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/copyColorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy color"
+            android:layout_marginTop="16dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="16dp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
